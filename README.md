@@ -33,3 +33,8 @@ This project is a quantum computing simulation framework written in Rust. It pro
    ```sh
    git clone https://github.com/yashikaadesai/quantum-computing-simulator.git
    cd quantum-computing-simulator
+   
+   ```sh
+2. cargo build
+  ```sh
+3. cargo run
