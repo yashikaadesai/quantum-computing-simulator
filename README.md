@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a quantum computing simulation framework written in Rust. It provides functionalities to simulate quantum gates, implement common quantum algorithms, and visualize quantum states and operations. The framework is structured to be modular and extensible, making it a great foundation for experimenting with quantum computing concepts.
+This project is a quantum computing simulation framework written in Rust. While I was learning Rust, I worked on this project to apply my new skills. It is rough, but it provides functionalities to simulate quantum gates, implement common quantum algorithms, and visualize quantum states and operations. The framework is structured to be modular and extensible, making it a great foundation for experimenting with quantum computing concepts.
 
 ## Features
 
@@ -36,3 +36,8 @@ This project is a quantum computing simulation framework written in Rust. It pro
    cargo build
    cargo run
 
+### Acknowledgement
+
+- ndarray: For numerical arrays.
+- plotters: For creating visualizations.
+- rand: For random number generation.
