@@ -1,15 +1,15 @@
 use crate::quantum_gate::{hadamard, pauli_x, cnot};
 use ndarray::prelude::*;
 
+// Simplified version of Shor's algorithm for demonstration purposes
 pub fn shors_algorithm(n: u32) -> Option<u32> {
-    // Simplified version of Shor's algorithm for demonstration purposes
     Some(n / 2)
 }
 
 pub fn grovers_algorithm(n: usize, target: usize) -> Option<usize> {
     // Initialize the state vector with equal superposition
     let mut state = Array1::from_elem(n, 1.0 / (n as f64).sqrt());
-    let hadamard_gate = hadamard(n);
+    let hadamard_gate = hadamard((n as f64).log2() as usize);
 
     // Number of iterations (sqrt(n) is optimal)
     let iterations = (n as f64).sqrt() as usize;
