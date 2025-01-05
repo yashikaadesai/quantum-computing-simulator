@@ -1,7 +1,6 @@
 use ndarray::prelude::*;
 use ndarray::array;
 
-// Single-qubit Hadamard gate
 pub fn hadamard_single() -> Array2<f64> {
     array![
         [1.0 / 2f64.sqrt(), 1.0 / 2f64.sqrt()],
@@ -9,7 +8,6 @@ pub fn hadamard_single() -> Array2<f64> {
     ]
 }
 
-// Create a multi-qubit Hadamard gate
 pub fn hadamard(n: usize) -> Array2<f64> {
     let h = hadamard_single();
     let mut hadamard_gate = h.clone();
