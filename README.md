@@ -10,3 +10,15 @@ The Quantum Computing Simulation Framework is a Rust-based tool designed to simu
 - **High Performance and Concurrency:** Efficient and concurrent simulations using Rust's powerful features.
 
 ## Project Structure
+
+
+## Getting Started
+
+### Prerequisites
+- Rust installed on your system. Follow the instructions [here](https://www.rust-lang.org/tools/install) to install Rust.
+
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/quantum-computing-simulator.git
+   cd quantum-computing-simulator
