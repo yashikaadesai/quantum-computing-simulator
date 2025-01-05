@@ -39,5 +39,3 @@ This project is a quantum computing simulation framework written in Rust. It pro
 
    ```sh
 3.   cargo run
-
-
