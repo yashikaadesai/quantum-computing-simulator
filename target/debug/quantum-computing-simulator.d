@@ -1,1 +1,0 @@
-/Users/yashika/Desktop/quantum-computing-simulator/target/debug/quantum-computing-simulator: /Users/yashika/Desktop/quantum-computing-simulator/src/main.rs /Users/yashika/Desktop/quantum-computing-simulator/src/quantum_algorithm.rs /Users/yashika/Desktop/quantum-computing-simulator/src/quantum_gate.rs /Users/yashika/Desktop/quantum-computing-simulator/src/visualization.rs
