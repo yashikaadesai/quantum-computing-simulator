@@ -5,13 +5,13 @@ mod tests {
     #[test]
     fn test_hadamard_single() {
         let h = hadamard_single();
-        // Add assertions to verify the correctness of the Hadamard gate
+        // Hadamard gate
     }
 
     #[test]
     fn test_pauli_x() {
         let x = pauli_x();
-        // Add assertions to verify the correctness of the Pauli-X gate
+        // Pauli-X gate
     }
 
     #[test]
