@@ -41,3 +41,31 @@ This project is a quantum computing simulation framework written in Rust. While 
 - ndarray: For numerical arrays.
 - plotters: For creating visualizations.
 - rand: For random number generation.
+
+## Example Usage
+
+### Simulating a Quantum Circuit
+
+Here's a step-by-step example of how to create and simulate a simple quantum circuit using the framework:
+
+1. **Add a Hadamard Gate to a Single Qubit**
+
+   This example demonstrates how to initialize a quantum circuit with 2 qubits, add a Hadamard gate to the first qubit, and simulate the circuit.
+
+   ```rust
+   use quantum_computing_simulator::quantum_gate::hadamard_single;
+   use quantum_computing_simulator::quantum_circuit::QuantumCircuit;
+
+   fn main() {
+       // Create a new quantum circuit with 2 qubits
+       let mut circuit = QuantumCircuit::new(2);
+
+       // Add a Hadamard gate to the first qubit
+       circuit.add_gate(hadamard_single(), vec![0]);
+
+       // Simulate the circuit
+       let final_state = circuit.simulate();
+
+       // Print the final state
+       println!("Final state after circuit simulation: {:?}", final_state);
+   }
