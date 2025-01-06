@@ -13,7 +13,6 @@ mod tests {
         let x = pauli_x();
         // Pauli-X gate
     }
-
     #[test]
     fn test_initialize_zero_state() {
         let state = initialize_zero_state(2);
@@ -22,7 +21,6 @@ mod tests {
         assert_eq!(state[2], 0.0);
         assert_eq!(state[3], 0.0);
     }
-
     #[test]
     fn test_measure_state() {
         let state = initialize_zero_state(2);

@@ -20,7 +20,5 @@ pub fn grovers_algorithm(n: usize, target: usize) -> Option<usize> {
         let mean_amplitude = state.sum() / (n as f64);
         state = state.mapv(|amplitude| 2.0 * mean_amplitude - amplitude);
     }
-
-    // Find the index with the highest amplitude
     state.iter().enumerate().max_by(|a, b| a.1.partial_cmp(b.1).unwrap()).map(|(i, _)| i)
 }
