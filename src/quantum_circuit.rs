@@ -4,7 +4,6 @@ pub struct QuantumCircuit {
     pub num_qubits: usize,
     pub gates: Vec<(Array2<f64>, Vec<usize>)>,
 }
-
 impl QuantumCircuit {
     pub fn new(num_qubits: usize) -> Self {
         Self {
@@ -12,11 +11,9 @@ impl QuantumCircuit {
             gates: Vec::new(),
         }
     }
-
     pub fn add_gate(&mut self, gate: Array2<f64>, qubits: Vec<usize>) {
         self.gates.push((gate, qubits));
     }
-
     pub fn simulate(&self) -> Array1<f64> {
         let mut state = Array1::from_elem(1 << self.num_qubits, 0.0);
         state[0] = 1.0; // Initialize to |0...0>
@@ -25,10 +22,8 @@ impl QuantumCircuit {
             let full_gate = self.expand_gate(gate, qubits);
             state = full_gate.dot(&state);
         }
-
         state
     }
-
     fn expand_gate(&self, gate: &Array2<f64>, qubits: &Vec<usize>) -> Array2<f64> {
         let mut full_gate = Array2::eye(1 << self.num_qubits);
 
@@ -43,10 +38,8 @@ impl QuantumCircuit {
                     expanded_gate[[row, col]] = gate[[k / 2, k % 2]];
                 }
             }
-
             full_gate = full_gate.dot(&expanded_gate);
         }
-
         full_gate
     }
 }
